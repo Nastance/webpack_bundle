@@ -5,7 +5,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const WebpackBar = require('webpackbar');
 
 const loadModeConfig = (env) => {
-    require(`./build-utils/${env.mode}.config`)(env);
+    require(`./build-utils/${env.mode}.config.js`)(env);
 };
 
 module.exports = (env) => merge({
