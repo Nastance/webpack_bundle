@@ -11,14 +11,12 @@ module.exports = (env) => ({
         },
         ],
     },
-    plugins: [
-        new HtmlWebpackPlugin({ template: "./index.html" })
-    ],
+    plugins: [new HtmlWebpackPlugin({ template: "./index.html" })],
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         historyApiFallback: true,
         compress: true,
-        port: 4141,
+        port: 5358,
         noInfo: true,
         quiet: true,
         clientLogLevel: "warning",
